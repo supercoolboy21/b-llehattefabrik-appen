@@ -1,0 +1,108 @@
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Velkommen til Bøllehat Appen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+    }
+
+    .hat-image {
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .hat-image:hover {
+      transform: scale(1.05);
+    }
+
+    .start-button {
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .start-button:hover {
+      background-color: #005fa3;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .hat-image {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bøllehat Konfiguratoren</h1>
+    <p>
+      Velkommen! Her kan du designe din helt egen bøllehat 🎨🧢  
+      Vælg mellem forskellige farver og motiver, og skab noget unikt.
+    </p>
+  </header>
+
+  <img class="hat-image" src="https://cdn.discordapp.com/attachments/757970161738186802/1385215476937789461/2AB018M.png?ex=685541f1&is=6853f071&hm=bb8a0581bf254ed7848780a29cf6e2489c31e6a3a4370e517c7ba8a757ca246d&" alt="Eksempel på bøllehat" />
+
+  <button class="start-button" onclick="location.href='protest2.html'">Start design</button>
+
+  <footer>
+    &copy; 2025 Bøllehat Fabrikken – alle rettigheder forbeholdes
+  </footer>
+
+</body>
+</html>

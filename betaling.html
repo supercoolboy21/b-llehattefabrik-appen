@@ -1,0 +1,89 @@
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Betaling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e0f7fa);
+      margin: 0;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #0077cc;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: #444;
+    }
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      font-size: 1.3rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Betaling</h1>
+  <p>Indtast dine oplysninger for at gennemføre købet</p>
+
+  <form action="tak.html" method="get">
+    <label for="navn">Navn:</label>
+    <input type="text" id="navn" name="navn" placeholder="F.eks. Maria Hansen" required>
+
+    <label for="adresse">Adresse:</label>
+    <input type="text" id="adresse" name="adresse" placeholder="F.eks. Bøllevej 12, 8000 Aarhus" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="din@email.dk" required>
+
+    <button type="submit">Bekræft betaling</button>
+  </form>
+
+</body>
+</html>
